@@ -1,16 +1,22 @@
 Package: summarystats
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Summary statistics table
+Version: 0.1.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Sasha",
+           family = "Tuttle",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "s.tuttle@live.ca")
+Description: This function summarizes the mean, median and 
+   standard deviation of the different levels of a factor for a 
+   given data set.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    magrittr,
+    palmerpenguins,
+    testthat
+Config/testthat/edition: 3
