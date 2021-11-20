@@ -12,8 +12,8 @@
 #' @examples
 #' summarystat(palmerpenguins::penguins, "species", "body_mass_g", na.rm = TRUE)
 #' summarystat(gapminder::gapminder, "continent", "lifeExp")
+#' @importFrom stats median
 #' @export
-#' @importFrom dplyr mutate
 summarystat <- function(data, x, y, na.rm = FALSE){
   if(is.numeric(data[[x]])) {
     stop("x cannot be numeric. x must be a factor or column name")}
