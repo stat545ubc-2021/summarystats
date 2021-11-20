@@ -3,3 +3,4 @@
 export("%>%")
 export(summarystat)
 importFrom(magrittr,"%>%")
+importFrom(stats,median)
