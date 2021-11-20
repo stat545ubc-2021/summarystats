@@ -22,4 +22,4 @@ test_that("the number of columns are correct", {
   expect_equal(4, ncol(summarystat(palmerpenguins::penguins, "species", "bill_length_mm")))
 })
 
-test_check("summarystats")
+
